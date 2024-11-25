@@ -65,9 +65,8 @@ This guide provides detailed step-by-step instructions for completing the projec
 **Additional evidencing:**
 Include a screenshot of your GitHub repository **after** you have pushed your initial commit.
 
-```markdown
-![Initial commit](images/mu_image.png)
-```
+
+![Initial commit](images/mu-image.png)
 
 ### Identify classes, methods, and attributes
 
@@ -105,9 +104,9 @@ Ensure you have completed the previous table and include at least two methods an
 **Additional evidencing:**
 Include a screenshot of your GitHub repository `src/` directory **after** you have pushed your changes.
 
-```markdown
+
 ![Added stubs for classes](images/stubs-for-classes.png)
-```
+
 
 ### Add constructors and attributes to the classes
 
@@ -212,6 +211,9 @@ Ensure that you have completed the previous steps and created the appropriate ta
 s1
 s2
 ```
+
+![git tag](images/git-tag.png)
+
 
 ### Relate the classes
 
