@@ -450,26 +450,28 @@ This time, we will push the tag to the remote repository:
 
 Add a screenshot of the GitHub repository after pushing the tag, showing the CarPark class with the new methods:
 
-```markdown
+
 ![Added methods to the car park class](images/methods-to-car-park.png)
-```
+
 
 Answer the following questions:
 > **Review Questions**
 >
 > 1. **Which class is responsible for each of the following pieces of information (and why)?**
 >    - _The number of available bays_
->      `Answer here...`
+>      `CarPark. It is in the available_bays property.`
 >    - _The current temperature_
->      `Answer here...`
+>      `CarPark. Temperature is currently a key/value pair in the dictionary `data` in the `update_diplsay` method.
 >    - _The time_
->      `Answer here...`
+>      `the time has not yet been implemented.`
 >
 > 2. **What is the difference between an attribute and a property?**
->    `Answer here...`
+>    `a property is s special kind of attribute. Attributes are accessed from the body of a class, however properties are accessed with methods (getters/setters). `
 >
 > 3. **Why do you think we used a dictionary to hold the data we passed the display? List at least one advantage and one disadvantage of this approach.**
->    `Answer here...`
+>    `One advantage is that it is convenient to have all of the necessary information that the display will need in one mutable variable.
+>    `A disadvantage is the additional memory overhead that dictionary type can use instead of other data types (strings, ints)
+>
 
 #### Add a detect vehicle method to the Sensor class
 
