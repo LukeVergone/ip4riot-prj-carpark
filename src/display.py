@@ -9,6 +9,7 @@ class Display:
         print(f"Display {self.id}: Welcome top the car park.")
 
     def update(self, data):
+        self.message = data['message']
         for key, value in data.items():
             print(f"{key}: {value}")
 
