@@ -372,10 +372,13 @@ You may want to see the number of available bays, the current temperature, and t
 Now consider, between the `CarPark`, `Sensor`, and `Display` classes, which class is responsible for each piece of information? There's no right or wrong answer here. But you should be able to justify your answer.
 
 >Q. Which class is responsible for the number of available bays (and why)?
->
+> CarPark is responsible, because it already contains the attributes `capacity` and the list `plates`. Available bays can be calculated by subtracting the length of `plates` from `capacity`.
+> 
 >Q. Which class is responsible for the current temperature (and why)?
->
+> I think Display is best suited to hold the current temperature as it is mainly a part of the `message` attribute. Neither the Sensor or CarPark classes have much need for temperature, but Display does (because users of the car park will want to read the current temperature from the information on the display).
+> 
 >Q. Which class is responsible for the time (and why)?
+> Display. Similar to the above, currently CarPark and Sensor have no need for time (there is no requirement to timestamp vehicles as they enter/exit). The time is just another component of the information to include on the display for users of the car park.
 >
 --------
 
