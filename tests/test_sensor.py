@@ -22,3 +22,6 @@ class TestSensor(unittest.TestCase):
     def test_detect_vehicle(self):
         self.entry_sensor.detect_vehicle = "FAKE-123"
         self.assertIsInstance(self.entry_sensor.detect_vehicle, str)
+
+if __name__ == "__main__":
+   unittest.main()

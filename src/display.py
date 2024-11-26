@@ -14,4 +14,5 @@ class Display:
             print(f"{key}: {value}")
 
 
-
+if __name__ == "__main__":
+    exit()

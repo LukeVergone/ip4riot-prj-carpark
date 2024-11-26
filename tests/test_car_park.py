@@ -81,8 +81,8 @@ class TestCarPark(unittest.TestCase):
         self.car_park.remove_car("FAKE-100")
         self.assertEqual(self.car_park.available_bays, 0)
 
-    #def tearDown(self):
-    #   Path(self.car_park.log_file).unlink(missing_ok=True)
+    def tearDown(self):
+       Path(self.car_park.log_file).unlink(missing_ok=True)
 
 if __name__ == "__main__":
    unittest.main()
