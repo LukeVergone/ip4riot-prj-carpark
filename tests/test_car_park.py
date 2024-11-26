@@ -4,7 +4,7 @@ from pathlib import Path
 
 class TestCarPark(unittest.TestCase):
     def setUp(self):
-        self.car_park = CarPark("123 Example Street", 100, None,None,None, "test_log.txt")
+        self.car_park = CarPark("123 Example Street", 100, None,None,None, "test_log.txt", "config.json")
 
     def test_car_park_initialized_with_all_attributes(self):
         self.assertIsInstance(self.car_park, CarPark)
@@ -15,6 +15,10 @@ class TestCarPark(unittest.TestCase):
         self.assertEqual(self.car_park.displays, [])
         self.assertEqual(self.car_park.available_bays, 100)
         self.assertEqual(self.car_park.log_file, Path("test_log.txt"))
+
+
+    def test_car_park_config_file(self):
+        self.assertEqual(self.car_park.config_file, Path("config.json"))
 
     def test_add_car(self):
         self.car_park.add_car("FAKE-001")
