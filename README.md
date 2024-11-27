@@ -6,6 +6,6 @@ The system uses sensors to detect incoming and outgoing cars in a carpark and ca
 It can also display other information such as the current Temperature and other important community messages for users.
 
 ## Features
-- Real-time Parking Availability: Detects and displays the number of parking bays are available in the carpark.
+- Real-time Parking Availability: Detects and displays the number of parking bays that are available in the carpark.
 - Weather Updates: Provides weather information for the carpark location.
 - Community Messages: Displays relevant community messages such as local events, safety updates, or alerts.
